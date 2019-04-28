@@ -127,7 +127,7 @@ Function subordinateCount(EmpID, FinalStep, CurrentStep, Count, reportName) As I
     'Returns the number of employees that report up to the employee (EmpID) indicated within the specified number of sub-supervisors (FinalStep), including the searched
     'Employee (so subtract 1 from the result for a true accounting of subordinates. The 'Count' and 'CurrentStep' parameters should be 0 when being called
     'for the first time. These variables are used for recursive purposes.
-    'For example, if Manager A has two reports (Supv B and Supv C) and Supv C has 2 reports (Emp D and Emp E) then there would be 2 individuals within two 'steps' of Manager A (B,C)
+    'For example, if Manager A has two reports (Supv B and Supv C) and Supv C has 2 reports (Emp D and Emp E) then there would be 2 individuals within one 'step' of Manager A (B,C)
     ' and there would be 4 individuals within two 'steps' of Manager A (B,C,D,E).
     
     Dim List As Collection
